@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.scss'
 import {BrowserRouter} from "react-router-dom";
-import {FluentProvider, webLightTheme} from "@fluentui/react-components";
+import {FluentProvider, webDarkTheme} from "@fluentui/react-components";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
       <BrowserRouter>
-        <FluentProvider theme={webLightTheme}>
+        <FluentProvider theme={webDarkTheme}>
             <App />
         </FluentProvider>
       </BrowserRouter>

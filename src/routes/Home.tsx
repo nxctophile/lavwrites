@@ -20,12 +20,12 @@ export default function Home() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto cumque cupiditate deleniti iusto qui similique totam voluptatibus! Eos quos, reiciendis. Atque dolor ducimus earum fugit quaerat similique sunt tempora velit! Asperiores corporis libero minus molestiae, nobis quod quos similique?
                 </div>
                 <div className="hero-button-container">
-                    <Link className="hero-link" to={"/next"}>
+                    <Link className="hero-link" to={"/about"}>
                         <Button className="hero-button" appearance="outline">
                             Know more
                         </Button>
                     </Link>
-                    <Link className="hero-link" to={"/next"}>
+                    <Link className="hero-link" to={"/signup"}>
                         <Button className="hero-button story-button" appearance="outline">
                             Create your own story
                         </Button>

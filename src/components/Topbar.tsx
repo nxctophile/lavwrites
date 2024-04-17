@@ -13,10 +13,10 @@ export default function Topbar () {
 
             <div className="navigation-container">
                 <div className="links-container">
-                    <Link to="/about" className="link">
+                    <Link to="/about" className="link text-link">
                         Who are we?
                     </Link>
-                    <Link to="/contact" className="link">
+                    <Link to="/contribute" className="link text-link">
                         Contribute :)
                     </Link>
                 </div>

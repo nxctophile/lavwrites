@@ -1,0 +1,125 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+}
+
+.hero-container {
+  padding-left: 10em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  font-family: 'Crimson Text', serif;
+  margin: 1em 1em 1em 0;
+  font-size: 6rem;
+}
+
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  width: 50%;
+  backdrop-filter: blur(5px);
+}
+
+.hero-button-container {
+  margin-top: 4em;
+}
+.hero-link {
+  width: fit-content;
+
+  .hero-button {
+    transition: .3s;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    padding: 1em;
+    border-radius: .5em;
+    backdrop-filter: blur(4px);
+    background: #00000044;
+  }
+
+  .story-button {
+    margin-left: 1em;
+    background: #eee;
+    color: #000;
+  }
+}
+
+.features-container {
+  backdrop-filter: blur(7px) brightness(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.features-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.2rem;
+  margin: 1em;
+}
+
+.features-description {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.features {
+  display: flex;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 17em;
+  width: 17em;
+  border-radius: 2em;
+  border: 1px solid #444;
+  background: #222;
+  margin: 2em;
+}
+
+.feature-icon {
+  height: 35%;
+  width: 35%;
+  margin-bottom: 2.2em;
+}
+
+.feature-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: .4em;
+}
+
+.feature-description {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .8rem;
+  opacity: .5;
+  width: 80%;
+  text-align: center;
+}

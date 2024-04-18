@@ -1,0 +1,17 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+::-webkit-scrollbar {
+    background: #222;
+    width: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+}

@@ -32,10 +32,6 @@
   color: #fff;
 }
 
-.branding:hover {
-  border-bottom: 1px solid;
-}
-
 .branding-icon {
   margin-bottom: .8em;
   margin-right: .4em;
@@ -75,6 +71,14 @@
     font-size: 1.1rem;
     border-radius: 10rem;
     padding: .8em 1.2em;
+    transition: .2s;
+    background: #222;
+    color: #fff;
+  }
+
+  .link-button:hover {
+    background-color: #111 !important;
+    color: #fff !important;
   }
 }
 

@@ -3,13 +3,24 @@ import {Button, Switch} from "@fluentui/react-components";
 import '../styles/components/Topbar.scss';
 import icon_active from '../assets/icon-x32.png';
 import icon_passive from '../assets/icon-alt-x24.png';
-import {useState} from "react";
+import {CSSProperties, Dispatch, SetStateAction, useState} from "react";
 
-export default function Topbar () {
+interface TopbarProps {
+    darkMode: boolean;
+    setDarkMode: Dispatch<SetStateAction<boolean>>;
+    topbarStyles: CSSProperties;
+    topbarButtonStyles: CSSProperties;
+}
+
+export default function Topbar ({darkMode, setDarkMode, topbarStyles, topbarButtonStyles}: TopbarProps) {
     const [icon, setIcon] = useState(icon_passive);
 
+    const handleModeSwitch = () => {
+        setDarkMode(!darkMode);
+    }
+
     return (
-        <div className="topbar-container">
+        <div className="topbar-container" style={topbarStyles}>
             <div className="branding-container">
                 <Link onMouseOver={() => setIcon(icon_active)} onMouseOut={() => setIcon(icon_passive)} className="branding" to="/">
                     lavWrites_.
@@ -29,7 +40,7 @@ export default function Topbar () {
 
                 <div className="links-container">
                     <Link to="/login" className="link">
-                        <Button className="link-button" appearance='secondary'>
+                        <Button className="link-button" appearance='secondary' style={topbarButtonStyles}>
                             Login
                         </Button>
                     </Link>
@@ -41,7 +52,7 @@ export default function Topbar () {
                             dark_mode
                         </span>
                     </div>
-                    <Switch/>
+                    <Switch className="switch" onChange={handleModeSwitch} />
                     <div className="switch-option">
                         <span className="material-symbols-rounded">
                             light_mode

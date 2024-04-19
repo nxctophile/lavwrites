@@ -24,24 +24,31 @@ section {
 }
 
 .hero-container {
-  padding-left: 10em;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-left: 10em;
 }
 
 .hero-text {
   font-family: 'Crimson Text', serif;
   margin: 1em 1em 1em 0;
   font-size: 6rem;
+  text-shadow: 0 0 10px #777;
 }
 
 .hero-description {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   line-height: 1.2em;
-  width: 50%;
+  width: 90%;
   backdrop-filter: blur(5px);
+  text-shadow: 0 0 5px #111;
 }
 
 .hero-button-container {
@@ -60,12 +67,23 @@ section {
     background: #00000044;
   }
 
+  .hero-button:hover {
+    background: #222;
+  }
+
   .story-button {
     margin-left: 1em;
     background: #eee;
     color: #000;
   }
 }
+
+.saturn {
+  margin-right: 10%;
+  //filter: hue-rotate(60deg);
+  filter: brightness(90%) hue-rotate(100deg);
+}
+
 
 .features-container {
   backdrop-filter: blur(7px) brightness(50%);
@@ -91,7 +109,7 @@ section {
   display: flex;
 }
 
-.feature {
+.feature-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +120,13 @@ section {
   border: 1px solid #444;
   background: #222;
   margin: 2em;
+  transition: .3s;
+}
+
+.feature-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #555;
 }
 
 .feature-icon {

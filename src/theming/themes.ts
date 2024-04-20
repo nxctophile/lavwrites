@@ -31,3 +31,12 @@ export const lightSaturn = {
 export const darkSaturn = {
     filter: 'brightness(90%) hue-rotate(100deg)',
 }
+
+export const darkFeaturesSection = {
+    background: '#191919',
+    color: '#fff',
+}
+export const lightFeaturesSection = {
+    background: '#ddd',
+    color: '#000',
+}
